@@ -1,0 +1,21 @@
+{
+  "name": "rockseat",
+  "version": "1.0.0",
+  "description": "Intensivo Rockeseat",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Taylor Oliveira",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.9.0",
+    "fastify": "^4.12.0"
+  },
+  "devDependencies": {
+    "prisma": "^4.9.0",
+    "tsx": "^3.12.3",
+    "typescript": "^4.9.5"
+  }
+}
