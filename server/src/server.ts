@@ -1,22 +1,17 @@
+// Fastify Dependencie
 import Fastify from "fastify";
-import { PrismaClient } from "@prisma/client";
+// @Fastify/cors dependencie
+import cors from "@fastify/cors";
+// Connection DB prisma
+import { prisma } from "./lib/prisma";
+// Function of routes
+import { appRoutes } from "./routes";
 
 const app = Fastify();
-const prisma = new PrismaClient();
 const port = 4030;
 
-app.get('/', async () => {
-
-    const habits = await prisma.habit.findMany({
-        where: {
-            title: {
-                startsWith: 'Beber'
-            }
-        }
-    });
-
-    return habits;
-});
+app.register(cors);
+app.register(appRoutes);
 
 app.listen({
     port
