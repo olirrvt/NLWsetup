@@ -2,8 +2,6 @@
 import Fastify from "fastify";
 // @Fastify/cors dependencie
 import cors from "@fastify/cors";
-// Connection DB prisma
-import { prisma } from "./lib/prisma";
 // Function of routes
 import { appRoutes } from "./routes";
 
