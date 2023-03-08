@@ -3,7 +3,7 @@ import logoImagme from '../assets/logo.png';
 
 export function Header() {
     return (
-        <div className='w-full max-w-3xl mx-auto flex items-center justify-between'>
+        <div className='w-full max-w-3xl mx-auto mb-10 flex items-center justify-between'>
         <img src={logoImagme} alt="logo-da-pagina" />
         
         <button 
