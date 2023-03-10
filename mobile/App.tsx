@@ -1,5 +1,7 @@
 // React Native
 import { StyleSheet, Text, View, StatusBar } from 'react-native';
+// Setup Date - pt-br
+import './src/lib/dayjs';
 // Components
 import { Home } from './src/screens/Home';
 import { Loading } from './src/components/Loading';
